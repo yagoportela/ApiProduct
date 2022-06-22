@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ProductRegistration.Infra.CrossCutting.IoC;
+namespace ProductRegistration.Infra.CrossCutting.IoC.Configurations;
+
 public class ConfigurationApiVerions
 {
     public static void Configure(IServiceCollection services)

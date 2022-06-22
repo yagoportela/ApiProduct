@@ -1,4 +1,5 @@
-using ProductRegistration.Infra.CrossCutting.IoC;
+using ProductRegistration.Infra.CrossCutting.IoC.Configurations;
+using ProductRegistration.Infra.CrossCutting.IoC.ConfigurationWebApplication;
 
 var builder = WebApplication.CreateBuilder(args);
 

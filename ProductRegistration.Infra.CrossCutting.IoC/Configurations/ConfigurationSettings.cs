@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ProductRegistration.Infra.CrossCutting.IoC;
+namespace ProductRegistration.Infra.CrossCutting.IoC.Configurations;
 
 public static class ConfigurationSettings
 {

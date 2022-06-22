@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 
-namespace ProductRegistration.Infra.CrossCutting.IoC;
+namespace ProductRegistration.Infra.CrossCutting.IoC.Configurations;
 
 public class LoggerService
 {

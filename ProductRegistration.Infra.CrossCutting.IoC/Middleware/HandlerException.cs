@@ -3,6 +3,7 @@ using System.Text.Json;
 using Microsoft.AspNetCore.Http;
 
 namespace ProductRegistration.Infra.CrossCutting.IoC.Middleware;
+
 public static class HandlerException
 {
     public static async Task Process(HttpContext context, Exception? exception)
