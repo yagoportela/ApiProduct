@@ -14,6 +14,7 @@ public class InjectionDependency
         InjectionFluent.Injection(services);
         ConfigurationMapper.Configuration(services);
         ConfigurationSwagger.Configure(services);
+        InjectionAWS.Injection(services);
     }
 
 }

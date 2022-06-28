@@ -16,6 +16,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProductRegistration.Domain\ProductRegistration.Domain.csproj" />
+    <ProjectReference Include="..\ProductRegistration.Notification\ProductRegistration.Notification.csproj" />
+    <ProjectReference Include="..\ProductRegistration.Shared\ProductRegistration.Shared.csproj" />
   </ItemGroup>
 
 </Project>

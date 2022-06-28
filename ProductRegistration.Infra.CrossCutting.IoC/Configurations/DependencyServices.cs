@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using ProductRegistration.Notification.SNS;
 
 namespace ProductRegistration.Infra.CrossCutting.IoC.Configurations;
 
@@ -6,6 +7,11 @@ public class DependencyServices
 {
     public static void ConfigurationDependences(IServiceCollection services)
     {
-        // services.AddScoped<Interface, class>();
-;    }
+        ConfigurationNotification(services);
+    }
+
+    public static void ConfigurationNotification(IServiceCollection services)
+    {
+        services.AddSingleton<ISnsNotificationClient, ISnsNotificationClient>();
+    }
 }

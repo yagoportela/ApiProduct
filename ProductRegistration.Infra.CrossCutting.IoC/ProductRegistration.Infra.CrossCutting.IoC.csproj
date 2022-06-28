@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.3.75" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.6" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
@@ -20,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ProductRegistration.Application\ProductRegistration.Application.csproj" />
     <ProjectReference Include="..\ProductRegistration.Domain\ProductRegistration.Domain.csproj" />
+    <ProjectReference Include="..\ProductRegistration.Notification\ProductRegistration.Notification.csproj" />
   </ItemGroup>
 
 </Project>
