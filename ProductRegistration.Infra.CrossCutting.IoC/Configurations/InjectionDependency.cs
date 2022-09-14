@@ -12,7 +12,6 @@ public class InjectionDependency
         DependencyServices.ConfigurationDependences(services);
         InjectionMediatr.Injection(services);
         InjectionFluent.Injection(services);
-        ConfigurationMapper.Configuration(services);
         ConfigurationSwagger.Configure(services);
         InjectionAWS.Injection(services);
     }

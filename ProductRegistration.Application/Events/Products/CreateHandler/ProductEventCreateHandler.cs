@@ -4,24 +4,24 @@ using ProductRegistration.Notification.SNS;
 using ProductRegistration.Shared.Configs;
 using Serilog;
 
-namespace ProductRegistration.Application.Events.Products;
+namespace ProductRegistration.Application.Events.Products.CreateHandler;
 
-public class ProductEventHandler : INotificationHandler<ProductNotification>
+public class ProductEventCreateHandler : INotificationHandler<ProductNotificationCreate>
 {
     private readonly ILogger _log;
     private readonly ISnsNotificationClient _snsNotificationClient;
     private readonly NotificationEventProductionConfig _notificationEventProductionConfig;
 
-    public ProductEventHandler(ILogger log,
-                               ISnsNotificationClient snsNotificationClient,
-                               NotificationEventProductionConfig notificationEventProductionConfig)
+    public ProductEventCreateHandler(ILogger log,
+                                     ISnsNotificationClient snsNotificationClient,
+                                     NotificationEventProductionConfig notificationEventProductionConfig)
     {
         _log = log;
         _snsNotificationClient = snsNotificationClient;
         _notificationEventProductionConfig = notificationEventProductionConfig;
     }
 
-    public Task Handle(ProductNotification notification, CancellationToken cancellationToken)
+    public Task Handle(ProductNotificationCreate notification, CancellationToken cancellationToken)
     {
         _log.Information("Notificando");
 
